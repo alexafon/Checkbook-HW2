@@ -1,0 +1,29 @@
+//Homework #2
+//Author: Alexander Gil Afonso
+//Program:
+//Date Created: February 22nd 
+//Date Last Modified: February 23rd
+//Usage:
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Check {
+	int CheckNum;
+	string CheckMemo;
+	float CheckAmount;
+
+	bool operator>(float otherAmount) {
+		return CheckAmount > otherAmount;
+	}
+
+	friend ostream& operator << (ostream& a, const Check& c) {
+		return a << "Check #: " << c.CheckNum << ", The amount: " << c.CheckAmount << ", The memo: " << c.CheckMemo << endl;
+	}
+};
+
+int main()
+{
+cout <<
+}
